@@ -20,17 +20,14 @@ def main():
     st.title("EDA Modern Olympic Games")
     image_path = "C:/Users/Tecnico/aprendiendo streamlit/45.jpg"
 
-    # Crear columnas
+    # Columnas
     col1, col2 = st.columns([1, 3])  # Esto crea 2 columnas, la primera más pequeña
     
-    # Colocar la imagen en la primera columna
     with col1:
         image = Image.open(image_path)
         st.image(image, width=150)  # Ajusta el tamaño de la imagen según necesites
 
-    # Colocar texto en la segunda columna
     with col2:
-        
         st.write("""
         This Exploratory Data Analysis (EDA) focuses on the Olympic Games from 1986 to 2012, examining the performance of athletes and countries based on gold, silver, and bronze medals. 
         It aims to identify trends and patterns in medal distribution, athlete success, and country performance across multiple OG. The analysis looks at which athletes and nations dominated, as well as how the competition and medal distribution evolved over the years.
