@@ -18,7 +18,7 @@ def load_data():
 
 def main():
     st.title("EDA Modern Olympic Games")
-    image_path = "C:/Users/Tecnico/aprendiendo streamlit/45.jpg"
+    image_path = "images/image.jpg"
 
     # Columnas
     col1, col2 = st.columns([1, 3])  # Esto crea 2 columnas, la primera más pequeña
@@ -99,7 +99,6 @@ def main():
                                                                                 value_vars=['Gold', 'Silver', 'Bronze'], 
                                                                                 var_name='Medal', 
                                                                                 value_name='Count')
-
     fig = px.bar(top_10_plot, 
                 x='Country', 
                 y='Count', 
@@ -110,15 +109,12 @@ def main():
 
     st.markdown("### Top 10 of your selection")
     st.write("This chart shows the medals of the most winning country according with the data provided. Is the Top 10 Countries by Medal Count filtered by your selection.")
-
     st.plotly_chart(fig, use_container_width=True)
 
     # Gráfico 2: Folium de los ganadores
     st.markdown("### Map of the winners of your selection")
     st.write("This map shows the winners of your previous selection with the data provided.")
-
     mapa = folium.Map(location=[20, -10], zoom_start=1.5)
-
     paises = df["Country"].unique()
 
     coordenadas = {
@@ -282,7 +278,6 @@ def main():
             ).add_to(mapa)
 
     mapa_html = mapa._repr_html_()
-
     html(mapa_html, width=1000, height=500)
 
 if __name__ == "__main__":
@@ -303,7 +298,6 @@ if __name__ == "__main__":
     # Gráfico 4: Distribución de eventos por deporte
     st.markdown("### Events Distribution by Sport")
     st.write("This bar chart visualizes the distribution of Olympic events across different sports over the years.")
-
     event_count_by_sport = df2['Sport'].value_counts().reset_index()
     event_count_by_sport.columns = ['Sport', 'Event Count']
 
