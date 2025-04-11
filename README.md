@@ -1,32 +1,32 @@
 # 🏟️ EDA MODERN OLYMPIC GAMES
 
-## 📌 Descripción
+## 📌 Description
 
-Este proyecto es una aplicación web desarrollada con **Streamlit** para el análisis exploratorio de datos (EDA) sobre los Juegos Olímpicos modernos desde 1896 hasta 2012. Utiliza datos históricos de atletas, países y medallas, y permite visualizar de forma interactiva el rendimiento y evolución de los países y deportistas a lo largo del tiempo.
-
----
-
-## 🔍 ¿Qué encontrarás aquí?
-
-- 📊 Visualización de datos: gráficos dinámicos de medallas, atletas y países.
-- 🧑‍💼 Análisis por atleta y país.
-- 🕰️ Tendencias históricas: participación, rendimiento y evolución olímpica.
+This project is a web application developed with **Streamlit** for Exploratory Data Analysis (EDA) on the modern Olympic Games from 1896 to 2012. It uses historical data on athletes, countries, and medals, and allows interactive visualizations to explore performance trends across nations and individuals over time.
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 🔍 What will you find here?
 
-- Streamlit  
-- Pandas, NumPy  
-- Plotly, Seaborn, Matplotlib  
-- Folium  
-- PIL (Pillow)
+- 📊 **Data visualization**: Dynamic charts showing medal distribution, athletes, and country participation.
+- 🧑‍💼 **Analysis by athlete and country**: Who dominated each Olympic edition?
+- 🕰️ **Historical trends**: Evolution of athletes, sports, and events throughout the years.
 
 ---
 
-## 🚀 Ejecución
+## 🛠️ Technologies Used
 
-1. Clona el repositorio:
+- **Streamlit**  
+- **Data analysis**: Pandas, NumPy  
+- **Visualization**: Plotly, Seaborn, Matplotlib  
+- **Maps**: Folium  
+- **Images**: PIL (Pillow)
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/JM181998/EDA-Olympics.git
